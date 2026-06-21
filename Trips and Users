@@ -1,0 +1,15 @@
+# Write your MySQL query statement below
+with cte as(select t.client_id as client,t.driver_id as driver,t.status,t.request_at as Day,
+avg(case when t.status='completed' then 0 else 1 end) as Cancellation_Rate
+from Trips as t
+join Users as U
+on U.users_id = t.client_id
+and U.banned ='No'
+join Users as U1
+on U1.users_id=t.driver_id
+and U1.banned='No'
+where t.request_at between '2013-10-01' and '2013-10-03'
+group by Day
+order by Day)
+select Day,round(Cancellation_Rate,2) as 'Cancellation Rate'
+from cte
