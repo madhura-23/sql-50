@@ -2,7 +2,7 @@
 
 ![SQL](https://img.shields.io/badge/SQL-MySQL-blue?style=flat-square&logo=mysql&logoColor=white)
 ![LeetCode](https://img.shields.io/badge/LeetCode-SQL%20Track-orange?style=flat-square&logo=leetcode&logoColor=white)
-![Problems Solved](https://img.shields.io/badge/Solved-10%2F50-red?style=flat-square)
+![Problems Solved](https://img.shields.io/badge/Solved-15%2F50-red?style=flat-square)
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 
 > Solving 50 SQL problems on LeetCode — from basic JOINs to advanced window functions.  
